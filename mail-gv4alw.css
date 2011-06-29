@@ -1,0 +1,470 @@
+/***** Roundcube|Mail mail task styles of gv4alw *****/
+
+
+#messageframe .boxlistcontent
+{
+  top: 28px !important;
+  border-top: 1px solid #999;
+}
+
+#partheader
+{
+  top: 45px;
+  left: 240px;
+  color: #FFFFFF;
+  z-index: 250;
+}
+
+#partheader table td
+{
+  color: #FFFFFF;
+}
+
+#partheader table td.title
+{
+  color: #FFFFFF;
+}
+
+#messagetoolbar
+{
+  position: relative;
+  padding: 4px;
+  height: 22px;
+  background-color: #F6F6F6;
+}
+
+#messagetoolbar a.button,
+#messagetoolbar a.buttonPas {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  background: url(images/mail_toolbar.png) 0 0 no-repeat transparent;
+}
+
+#messagetoolbar a.buttonPas {
+  opacity: 0.35;
+}
+
+#messagetoolbar select.mboxlist {
+  margin: 0;
+  top: 0;
+}
+
+/*** buttons ***/
+
+#messagemenu li a.active:hover,
+#markmessagemenu li a.active:hover
+{
+  background-color: #B2B4BF;
+}
+
+.dropbutton span:hover
+{
+  background-position: -74px 0;
+}
+
+#messagetoolbar a.checkmailSel {
+  background-position: 0 -22px;
+}
+
+#messagetoolbar a.back {
+  background-position: -22px 0;
+}
+
+#messagetoolbar a.backSel {
+  background-position: -22px -22px;
+}
+
+#messagetoolbar a.compose {
+  background-position: -44px 0;
+}
+
+#messagetoolbar a.composeSel {
+  background-position: -44px -22px;
+}
+
+#messagetoolbar a.reply {
+  background-position: -66px 0;
+}
+
+#messagetoolbar a.replySel {
+  background-position: -66px -22px;
+}
+
+#messagetoolbar a.replyAll {
+  background-position: -88px 0;
+}
+
+#messagetoolbar a.replyAllSel {
+  background-position: -88px -22px;
+}
+
+#messagetoolbar a.forward {
+  background-position: -110px 0;
+}
+
+#messagetoolbar a.forwardSel {
+  background-position: -110px -22px;
+}
+
+#messagetoolbar a.delete {
+  background-position: -132px 0;
+}
+
+#messagetoolbar a.deleteSel {
+  background-position: -132px -22px;
+}
+
+#messagetoolbar a.markmessage {
+  background-position: -176px 0;
+}
+
+#messagetoolbar a.messagemenu {
+  background-position: -198px 0px;
+}
+
+#messagetoolbar a.spellcheck {
+  background-position: -264px 0;
+}
+
+#messagetoolbar a.spellcheckSel {
+  background-position: -264px -22px;
+}
+
+#messagetoolbar a.attach {
+  background-position: -242px 0;
+}
+
+#messagetoolbar a.attachSel {
+  background-position: -242px -22px;
+}
+
+#messagetoolbar a.insertsig {
+  background-position: -308px 0;
+}
+
+#messagetoolbar a.insertsigSel {
+  background-position: -308px -22px;
+}
+
+#messagetoolbar a.savedraft {
+  background-position: -220px 0;
+}
+
+#messagetoolbar a.savedraftSel {
+  background-position: -220px -22px;
+}
+
+#messagetoolbar a.send {
+  background-position: -286px 0;
+}
+
+#messagetoolbar a.sendSel {
+  background-position: -286px -22px;
+}
+
+/*** Container **/
+#mailcontframe
+{
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+#mailpreviewframe
+{
+  top: 215px;
+  background-color: #FFFFFF;
+}
+
+/*** mailbox list styles ***/
+
+#mailboxlist-container
+{
+  background-color: #FFFFFF;
+}
+
+#mailboxlist-container .boxlistcontent
+{
+  top: 0;
+}
+
+#mailboxlistgw
+{
+  position:relative;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  list-style-image: none;
+  list-style-type: none;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 2px;
+  left: 4px !important;
+  background: url(images/icons/folder-home.png) 5px 0 no-repeat;
+  background-position: 0px 0px;
+  background-color: #FFFFFF;
+}
+
+#mailboxlistgw li
+{
+  display: block;
+  height: 17px;
+  position: relative;
+  padding: 2px 0px 0px 20px;
+  font-style:italic;
+}
+
+#mailboxlist li
+{
+  padding-left: 12px;
+  font-size: 12px;
+  background: url(images/icons/folder-closed.png) 5px 0 no-repeat;
+  background-position: 0px 0px;
+  border: none;
+}
+
+#mailboxlist li div
+{
+  left: 7px !important;
+}
+
+#mailboxlist li.inbox
+{
+  background-image: url(images/icons/folder-inbox.png);
+  background-position: 0 0;
+}
+
+#mailboxlist li.drafts
+{
+  background-image: url(images/icons/folder-drafts.png);
+  background-position: 0 0;
+}
+
+#mailboxlist li.sent
+{
+  background-image: url(images/icons/folder-sent.png);
+  background-position: 0 0;
+}
+
+#mailboxlist li.junk
+{
+  background-image: url(images/icons/folder-junk.png);
+  background-position: 0 0;
+}
+
+#mailboxlist li.trash
+{
+  background-image: url(images/icons/folder-trash.png);
+  background-position: 0 0;
+}
+
+#mailboxlist li.selected
+{
+  background-color: #B2B4BF;
+  font-weight: bold;
+}
+
+#mailboxlist li.unread.selected > a
+{
+  color: white;
+}
+
+#mailboxlist li a:hover,
+#mailboxlist li.unread a:hover
+{
+  color: white;
+  font-weight: bold;
+  background-color: #B2B4BF;
+  background-image: inherit;
+  background-repeat: no-repeat;
+  background-position: -10px 0px;
+}
+
+#mailboxlist li.unread > a
+{
+  color: #246486;
+}
+
+#mailboxlist li.droptarget
+{
+  background-color: #B2B4BF;
+  color: #000000;
+  font-weight: bold;
+}
+
+#mailboxlist ul {
+  border: none;
+  list-style: none;
+  padding: 0;
+  margin-left: -12px;
+  padding-left: 14px;
+  background-position: 0px 0px;
+}
+
+/** message list styles */
+body.messagelist
+{
+  background-color: #FFFFFF;
+}
+
+#messagelist thead tr td
+{
+  height: 24px !important;
+  font-size: 14px;
+}
+
+#messagelist thead tr td a
+{
+  color: #FFFFFF;
+}
+
+#messagelist tbody tr td
+{
+  font-size: 12px;
+  border-bottom: none;
+}
+
+#messagelist tbody tr td a
+{
+  color: #766792;
+  cursor: inherit;
+}
+
+#messagelist tbody tr:hover,
+#messagelist tbody tr:hover > td,
+#messagelist tbody tr:hover > td a
+{
+  background-color: #B2B4BF;
+  font-weight: bold;
+  color: white;
+}
+
+#messagelist tr td div.collapsed,
+#messagelist tr td div.expanded,
+#messagelist tr td img.flagicon,
+#messagelist tr td img.msgicon
+{
+  cursor: pointer;
+}
+
+#messagelist tr.message
+{
+  background-color: #F6F6F6;
+}
+
+#messagelist tr.unread
+{
+  font-weight: bold;
+  color: #246486;
+}
+
+#messagelist tr.selected td
+{
+  background-color: #B2B4BF;
+}
+
+#messagelist tr.selected td a:hover
+{
+  font-weight: normal;
+}
+
+#messagelist tr.unfocused td
+{
+  color: #FFFFFF;
+  background-color: #B2B4BF;
+}
+
+/*** message view styles ***/
+
+div.messageheaderbox
+{
+  margin: 6px 8px 0px 8px;
+}
+
+table.headers-table
+{
+  background-color: #F7F7F7;
+}
+
+#messagebody table.headers-table
+{
+  width: auto;
+  margin: 6px 8px;
+  background-color: #F4F4F4;
+}
+
+#messageframe table.headers-table
+{
+  border-bottom: 1px solid #EFEFEF;
+}
+
+table.headers-table tr td
+{
+  border-bottom: none;
+}
+
+table.headers-table tr td.header-title
+{
+  width: 3%;
+}
+
+table.headers-table tr td.subject
+{
+  width: 97%;
+}
+
+div.more-headers
+{
+  width: 100%;
+}
+
+#attachment-list
+{
+  padding: 0px 0px 0px 8px;
+  background: url(images/icons/attachment.png) 10px 5px no-repeat #DFDFDF;
+}
+
+#all-headers
+{
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding-right: 10px;
+  padding: 0px 2px 4px 2px;
+  border-bottom: 0;
+}
+
+#headers-source
+{
+  margin: 0 5px;
+  white-space: nowrap;
+}
+
+/** message compose styles */
+
+#compose-container
+{
+  background-color: #f6f6f6;
+  border: 1px solid #999;
+  padding: 0 10px;
+}
+
+#compose-headers-div #messagetoolbar
+{
+  padding-left: 0px;
+  margin-left: -10px;
+}
+
+#compose-div
+{
+  width: 98.9%;
+}
+
+#compose-headers td.title,
+#compose-subject td.title
+{
+  z-index: 1;
+}
+
+/*** quota ***/
+

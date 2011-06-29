@@ -1,0 +1,47 @@
+<div id="tabsbar">
+  <roundcube:if condition="env:task == 'mail'">
+		<span id="mailtab" class="tablink tablink-selected">
+  <roundcube:else />
+		<span id="mailtab" class="tablink">
+  <roundcube:endif />
+  <roundcube:button command="mail" label="mail" class="button-mail" /></span>
+
+  <roundcube:if condition="env:task == 'settings' && env:action == ''">
+		<span id="settingstab" class="tablink tablink-selected">
+  <roundcube:else />
+		<span id="settingstab" class="tablink">
+  <roundcube:endif />
+  <roundcube:if condition="env:task == 'settings' && env:action != ''">
+  <roundcube:button task="settings" command="settings" label="settings" class="button-settings" /></span>
+  <roundcube:else />
+  <roundcube:button command="settings" label="settings" class="button-settings" /></span>
+  <roundcube:endif />
+
+  <roundcube:if condition="env:task == 'addressbook'">
+		<span id="addressbooktab" class="tablink tablink-selected">
+  <roundcube:else />
+		<span id="addressbooktab" class="tablink">
+  <roundcube:endif />
+  <roundcube:button command="addressbook" label="addressbook" class="button-addressbook" /></span>
+
+  <roundcube:if condition="env:task == 'settings' && env:action == 'folders'">
+		<span id="folderstab" class="tablink tablink-selected">
+  <roundcube:else />
+		<span id="folderstab" class="tablink">
+  <roundcube:endif />
+  <roundcube:button task="settings" command="folders" label="folders" class="button-folders" /></span>
+
+  <roundcube:if condition="env:task == 'settings' &&  ( env:action == 'identities' || env:action == 'add-identity' || env:action == 'edit-identity' )">
+		<span id="identitiestab" class="tablink tablink-selected">
+  <roundcube:else />
+		<span id="identitiestab" class="tablink">
+  <roundcube:endif />
+  <roundcube:button task="settings" command="identities" label="identities" class="button-identities" /></span>
+
+  <roundcube:container name="taskbar" id="taskbar" />
+
+	<script type="text/javascript"> if (window.rcmail) rcmail.add_onload(rcube_init_bar_tabs); </script>
+</div>
+<span id="logout">
+	<roundcube:button command="logout" label="logout" class="button-logout" />
+</span>

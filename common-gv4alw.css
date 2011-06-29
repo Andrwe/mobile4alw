@@ -1,0 +1,382 @@
+/***** Roundcube|Mail basic styles *****/
+
+body
+{
+  background-color: #E4F2F5;
+}
+
+body.iframe
+{
+  margin: 0px;
+  border: 10px solid #DFDDD5;
+  width: auto;
+}
+
+body, td, th, div, p, h3, select, input, textarea
+{
+  font-family: Tahoma, "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+
+select
+{
+  font-size: 11px;
+  background-color: #4c5e75;
+  color: white;
+  border-radius: 4px;
+  padding-left: 2px;
+  top: 0px;
+}
+
+select option
+{
+  padding-left: 15px;
+}
+
+input[type="text"],
+input[type="button"],
+input[type="password"],
+textarea
+{
+  padding: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+input, textarea
+{
+  color: #333333;
+  padding: 1px 3px;
+  font-size: 9pt;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+}
+
+/** common user interface objects */
+
+#mainscreen
+{
+  top: 60px;
+  right: 10px;
+  left: 10px;
+}
+
+/*** tabsbar ***/
+
+#taskbar
+{
+  background: none;
+}
+
+#tabsbar
+{
+  top: 12px;
+  left: 10px;
+  right: 100px;
+  height: 18px;
+  z-index: 1200;
+  border: none;
+}
+
+#taskbardate
+{
+  position: absolute;
+  top: 6px;
+  right: 150px;
+  height: 17px;
+  z-index: 200;
+  font-size: 13px !important;
+  text-align: right;
+  color: #FFFFFF;
+  vertical-align: top;
+}
+
+#logout
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 20px;
+  color: #FFFFFF;
+  background-color: #436B9E;
+  padding: 4px 0px 3px 0px;
+  font-family: Tahoma,Arial,"nimbus sans l",sans-serif;
+  text-align: right;
+  white-space: nowrap;
+  z-index: 2;
+  /* css hack for IE */
+  width: expression((parseInt(document.documentElement.clientWidth)-4)+'px');
+}
+
+#logout a
+{
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 6px 10px 6px 10px;
+}
+
+#logout a:hover
+{
+  color: #B2B4BF;
+}
+
+span.tablink,
+span.tablink-selected
+{
+  width: 102px;
+  height: 18px !important;
+  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
+  font-size: 13px;
+  text-align: center;
+  background: url(images/tab-pas.png);
+  padding: 0 0 4px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+span.tablink-selected
+{
+  background: url(images/tab-act.png);
+  cursor: default;
+}
+
+span.tablink a,
+span.tablink-selected a
+{
+  display: block;
+  color: #DEE7EF;
+  text-decoration: none;
+  text-align: center;
+  background: none;
+}
+
+span.tablink a:hover
+{
+  position: absolute;
+  top: 0px;
+  padding: 4px 0 0 0;
+  margin-left: 0;
+  height: 18px;
+  width: 102px;
+  color: #4c5e75;
+  background: url('images/tab-act.png');
+}
+
+span.tablink-selected a:hover
+{
+  position: absolute;
+  top: 0px;
+  padding: 4px 0 0 0;
+  height: 18px;
+  width: 102px;
+  color: #4c5e75;
+  background: url('images/tab-act.png');
+}
+
+span.tablink-selected a
+{
+  color: #4c5e75;
+}
+
+/*** box styles ***/
+
+div.boxtitle
+{
+  height: 20px !important;
+  padding: 2px 4px 0;
+  vertical-align: middle;
+  font-size: 14px;
+  color: white;
+}
+
+div.boxlistcontent
+{
+  top: 23px;
+}
+
+/*** splitter styles ***/
+
+.splitter-h
+{
+  cursor: n-resize;
+}
+
+.splitter-v
+{
+  cursor: e-resize;
+}
+
+/***** mac-style quicksearch field *****/
+
+#quicksearchbar
+{
+  top: 31px;
+  background: none;
+  border: 2px inset #4c5e75;
+  border-radius: 4px;
+}
+
+#quicksearchbox
+{
+  border-radius: 4px;
+}
+
+#searchreset
+{
+	right: 2px
+}
+
+#searchmenulink
+{
+  right: 162px;
+}
+
+.searchfilter
+{
+  background-color: #4c5e75;
+  color: white;
+  border-radius: 4px;
+  padding-left: 2px;
+}
+
+.searchfilter option
+{
+  padding-left: 5px;
+}
+
+
+/***** roundcube webmail pre-defined classes *****/
+
+#rcmKSearchpane ul li.selected
+{
+  background-color: #B2B4BF;
+}
+
+ul.toolbarmenu li a
+{
+  padding: 2px 12px 3px 28px;
+}
+
+.popupmenu li a.active:hover
+{
+  color: #fff;
+  background-color: #b2b4bf;
+}
+
+/** quota indicator */
+
+#quota
+{
+  color: #FFFFFF;
+  font-size: 9px;
+  z-index: 202;
+}
+
+.quota_text {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.quota_bg     { background-color: #6584AE; }
+.quota_mid   { background-color: #F5AD3C; }
+.quota_low   { background-color: #FFFF00; }
+.quota_text_mid   { color: #FFFFFF; }
+.quota_text_low   { color: #FFFFFF; }
+
+/*** records-table (addressbook, settings, folders) ***/
+
+table.records-table tbody tr.selected td,
+table.records-table tbody tr.unfocused td,
+table.records-table tbody tr:hover,
+table.records-table tbody tr.even:hover,
+table.records-table tbody tr:hover > td,
+table.records-table tbody tr.even:hover > td,
+table.records-table tbody tr td:hover
+{
+  border: none;
+  background-color: #B2B4BF;
+  font-weight: bold;
+  color: white;
+}
+
+table.records-table tbody tr.even,
+table.records-table tbody tr:nth-child(even)
+{
+  background-color: #F9F9F9;
+}
+
+table.records-table tbody tr td
+{
+  font-size: 13px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  border: none;
+}
+
+table.records-table thead tr td
+{
+  height: 22px;
+  font-size: 14px;
+  color: white;
+  vertical-align: middle;
+}
+
+/*** identities, folders & contacts styles ***/
+
+div#contact-body,
+div#folder-body
+{
+  position: relative;
+  top: 42px;
+}
+
+div#contact-body fieldset.tabbed,
+div#folder-body fieldset.tabbed,
+div#identity-body fieldset.tabbed
+{
+  margin: 0;
+}
+
+#contact-details input.button,
+#folder-details input.button
+{
+  position: relative;
+  top: 40px;
+}
+
+div#contact-details div.tabsbar,
+div#folder-details div.tabsbar,
+div#identity-details div.tabsbar
+{
+  border: none;
+}
+
+/*** plugin styles ***/
+
+div.ui-widget-header
+{
+  background: url(images/listheader.gif) top left repeat-x #CCC;
+  height: 20px;
+  padding: 2px 4px 0 !important;
+  vertical-align: middle;
+  font-size: 14px;
+  color: white;
+}
+
+/** fix for hardcoded img-size of markasjunk- and accounts-plugin **/
+a[onclick="return rcmail.command('plugin.markasjunk','',this)"] img,
+a[onclick="return rcmail.command('plugin.archive','',this)"] img
+{
+  height: inherit;
+  width: inherit;
+}
+
+/** fix for hardcoded image path to default-skin of enigma-plugin **/
+a[onclick="rcmail_ui.show_popup('enigmamenu', true); return false"] img
+{
+  height: 22px;
+  width: 22px;
+}
+
