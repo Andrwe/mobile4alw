@@ -2,7 +2,6 @@
 
 body
 {
-  margin: 8px;
   background-color: #F6F6F6;
   color: #000000;
 }
@@ -20,8 +19,9 @@ body.extwin
 
 body, td, th, div, p, h3, select, input, textarea
 {
-  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-family: Tahoma, "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #666;
 }
 
 th
@@ -31,7 +31,7 @@ th
 
 h3
 {
-  font-size: 18px;
+  font-size: 28px;
 }
 
 a, a:active, a:visited
@@ -119,10 +119,10 @@ img
 #mainscreen
 {
   position: absolute;
-  top: 85px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
+  right: 10px;
+  left: 10px;
+  top:  36px;
+  bottom: 10px;
 }
 
 #header
@@ -276,14 +276,13 @@ body.iframe .boxtitle
 
 .boxlistcontent
 {
+  overflow-x: hidden;
+  overflow-y: auto;
   position: absolute;
-  top: 20px;
-  bottom: 22px;
   left: 0;
   right: 0;
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  top: 43px;
+  height: 100%;
 }
 
 .boxsubject

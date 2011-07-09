@@ -1,157 +1,20 @@
 /***** Roundcube|Mail mail task styles *****/
 
 
-#messagetoolbar
+.hidden
 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 10px;
-  height: 35px;
-  min-width: 650px;
-  white-space: nowrap;
-/*  border: 1px solid #cccccc; */
+  display: none;
 }
 
-#messagetoolbar a
+#foldermaildiv
 {
-  display: block;
-  float: left;
-  padding-right: 10px;
-}
-
-#messagetoolbar a.button,
-#messagetoolbar a.buttonPas {
-  display: block;
-  float: left;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  margin: 0 5px;
-  overflow: hidden;
-  background: url(images/mail_toolbar.png) 0 0 no-repeat transparent;
-  opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
-}
-
-#messagetoolbar a.buttonPas {
-  opacity: 0.35;
-}
-
-#messagetoolbar a.checkmailSel {
-  background-position: 0 -32px;
-}
-
-#messagetoolbar a.back {
-  background-position: -32px 0;
-}
-
-#messagetoolbar a.backSel {
-  background-position: -32px -32px;
-}
-
-#messagetoolbar a.compose {
-  background-position: -64px 0;
-}
-
-#messagetoolbar a.composeSel {
-  background-position: -64px -32px;
-}
-
-#messagetoolbar a.reply {
-  background-position: -96px 0;
-}
-
-#messagetoolbar a.replySel {
-  background-position: -96px -32px;
-}
-
-#messagetoolbar a.replyAll {
-  background-position: -128px 0;
-}
-
-#messagetoolbar a.replyAllSel {
-  background-position: -128px -32px;
-}
-
-#messagetoolbar a.forward {
-  background-position: -160px 0;
-}
-
-#messagetoolbar a.forwardSel {
-  background-position: -160px -32px;
-}
-
-#messagetoolbar a.delete {
-  background-position: -192px 0;
-}
-
-#messagetoolbar a.deleteSel {
-  background-position: -192px -32px;
-}
-
-#messagetoolbar a.markmessage {
-  background-position: -256px 0;
-}
-
-#messagetoolbar a.messagemenu {
-  background-position: -288px 0;
-}
-
-#messagetoolbar a.spellcheck {
-  background-position: -384px 0;
-}
-
-#messagetoolbar a.spellcheckSel {
-  background-position: -384px -32px;
-}
-
-#messagetoolbar a.attach {
-  background-position: -352px 0;
-}
-
-#messagetoolbar a.attachSel {
-  background-position: -352px -32px;
-}
-
-#messagetoolbar a.insertsig {
-  background-position: -448px 0;
-}
-
-#messagetoolbar a.insertsigSel {
-  background-position: -448px -32px;
-}
-
-#messagetoolbar a.savedraft {
-  background-position: -322px 0;
-}
-
-#messagetoolbar a.savedraftSel {
-  background-position: -322px -32px;
-}
-
-#messagetoolbar a.send {
-  background-position: -416px 0;
-}
-
-#messagetoolbar a.sendSel {
-  background-position: -416px -32px;
-}
-
-#messagetoolbar select.mboxlist
-{
-  position: relative;
-  margin: 0 8px;
-  top: 6px;
-}
-
-#messagetoolbar select.mboxlist option
-{
-  padding-left: 15px;
-}
-
-#messagetoolbar select.mboxlist option[value=""]
-{
-  padding-left: 2px;
+  width: 96%;
+  padding: 7px 0;
+  text-align: center;
+  border: 1px solid #a4a4a4;
+  background-color: #ffffff;
+  font-weight: bold;
+  margin: auto;
 }
 
 #searchmenu
@@ -169,69 +32,6 @@
   margin: 1px 4px 1px;
 }
 
-#messagemenu li a.active:hover,
-#markmessagemenu li a.active:hover
-{
-  color: #fff;
-  background-color: #c00;
-}
-
-#messagemenu li a
-{
-  background: url(images/messageactions.png) no-repeat 7px 0;
-  background-position: 7px 20px;
-}
-
-#messagemenu li a.printlink
-{
-  background-position: 7px 1px;
-}
-
-#messagemenu li a.downloadlink
-{
-  background-position: 7px -17px;
-}
-
-#messagemenu li a.sourcelink
-{
-  background-position: 7px -35px;
-}
-
-#messagemenu li a.openlink
-{
-  background-position: 7px -53px;
-}
-
-#messagemenu li a.editlink
-{
-  background-position: 7px -71px;
-}
-
-#markmessagemenu li a
-{
-  background: url(images/messageicons.png) no-repeat;
-}
-
-#markmessagemenu li a.readlink
-{
-  background-position: 7px -51px;
-}
-
-#markmessagemenu li a.unreadlink
-{
-  background-position: 7px -119px;
-}
-
-#markmessagemenu li a.flaggedlink
-{
-  background-position: 7px -153px;
-}
-
-#markmessagemenu li a.unflaggedlink
-{
-  background-position: 7px -136px;
-}
-
 #searchfilter
 {
   white-space: nowrap;
@@ -243,107 +43,6 @@
 #searchfilter label
 {
   font-size: 11px;
-}
-
-#mailleftcontainer
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 195px;
-}
-
-#mailrightcontainer
-{
-  position: absolute;
-  top: 0;
-  left: 170px;
-  bottom: 0;
-  right: 0;
-  min-width: 600px;
-}
-
-#mailrightcontent
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#messagepartcontainer
-{
-  position: absolute;
-  top: 80px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-}
-
-#mailcontframe
-{
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  border: 1px solid #999999;
-  background-color: #F9F9F9;
-  overflow: hidden;
-}
-
-#mailpreviewframe
-{
-  position: absolute;
-  width: 100%;
-  top: 205px;
-  bottom: 0px;
-  border: 1px solid #999999;
-  background-color: #F9F9F9;
-}
-
-#messagecontframe
-{
-  position: relative;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-#messagepartframe
-{
-  width: 100%;
-  height: 100%;
-  border: 1px solid #999999;
-  background-color: #F9F9F9;
-}
-
-
-#partheader
-{
-  position: absolute;
-  top: 10px;
-  left: 220px;
-  right: 20px;
-  height: 40px;
-}
-
-#partheader table td
-{
-  padding-left: 2px;
-  padding-right: 4px;
-  vertical-align: middle;
-  font-size: 11px;
-}
-
-#partheader table td.title
-{
-  color: #666666;
-  font-weight: bold;
 }
 
 
@@ -361,12 +60,13 @@
   overflow: hidden;
 }
 
-#mailboxlist
+#messagelist,
+#mailboxlist,
+#mailboxlistgw
 {
   position:relative;
+  margin: 0;
   height: auto;
-  margin: 0px;
-  padding: 0px;
   list-style-image: none;
   list-style-type: none;
   overflow: hidden;
@@ -374,11 +74,17 @@
   background-color: #FFF;
 }
 
+#mailboxlistgw li
+{
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #EBEBEB;
+}
+
 #mailboxlist li
 {
   display: block;
   position: relative;
-  font-size: 11px;
   background: url(images/icons/folders.png) 5px 0 no-repeat;
   border-bottom: 1px solid #EBEBEB;
 }
@@ -617,12 +323,6 @@
 
 /** message list styles */
 
-body.messagelist
-{
-  margin: 0px;
-  background-color: #F9F9F9;
-}
-
 #messagelist
 {
   width: 100%;
@@ -637,8 +337,8 @@ body.messagelist
   vertical-align: middle;
   border-bottom: 1px solid #999999;
   color: #333333;
-  background: url(images/listheader.gif) top left repeat-x #CCC;
-  font-size: 11px;
+  width: 100%;
+  background-color: #CCC;
   font-weight: bold;
 }
 
@@ -680,8 +380,7 @@ body.messagelist
 #messagelist tbody tr td
 {
   height: 20px;
-  padding: 0;
-  font-size: 11px;
+  width: 100%;
   overflow: hidden;
   vertical-align: middle;
   white-space: nowrap;
@@ -1273,11 +972,6 @@ div.hide-headers
   height: 22px;
   background: none;
   border-top: 0;
-}
-
-#compose-div .boxlistcontent
-{
-  bottom: 23px;
 }
 
 #compose-body

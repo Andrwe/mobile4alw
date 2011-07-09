@@ -2,5 +2,5 @@
 <link rel="shortcut icon" href="/images/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="/common.css" />
 <roundcube:if condition="env:task != 'login' && env:task != 'dummy'" />
-<link rel="stylesheet" type="text/css" href="/<roundcube:var name="env:task" />.css" />
+<link rel="stylesheet" type="text/css" href="/<roundcube:var name="env:task" /><roundcube:var name="env:action" />.css" />
 <roundcube:endif />
